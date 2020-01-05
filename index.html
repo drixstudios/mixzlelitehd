@@ -15,7 +15,7 @@
                 left: 0;
                 right: 0;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
             }
             #loading {
@@ -24,7 +24,7 @@
             progress[value] {
                 appearance: none;
                 background-color: #eee;
-                border-radius: 3px;
+                border-radius: 1px;
                 box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
                 width: 50%;
                 height: 8px
@@ -32,10 +32,11 @@
         </style>
     </head>
   <body>
-    <div id="loading"> loading
-        <progress value="0" max="100" id="progress"></progress>
-      <div id="status">Downloading...</div>
-      <div></div>
+    <div id="loading">      
+      <font size="5" face="verdana" color="white">LOADING</font><br>
+      <progress value="0" max="100" id="progress"></progress><br>    
+      <font size="4" face="verdana" color="white">please wait...</font>
+      <div id="status">Downloading...</div>      
     </div>
 
     <div>
